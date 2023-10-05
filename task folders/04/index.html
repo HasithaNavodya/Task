@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 04</title>
+</head>
+<body>
+<script src="../../assets/js/jquery-3.7.1.min.js"></script>
+<script>
+    $("#btn").click(function (){
+    let value=$("input").val();
+    let li=`<li class="list-group-item">${value}</li>`;
+    $('#task').append(li);
+    $("img").attr('src',value);
+
+});
+</script>
+</body>
+</html>
